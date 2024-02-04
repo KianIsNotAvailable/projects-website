@@ -1,27 +1,28 @@
 import './App.css';
-import Page from './components/page'
-import Hero from './components/hero'
-import Header from './components/header'
+import Page from './components/page';
+import Hero from './components/hero';
+import Header from './components/header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Twitchbot from './components/twitchbot';
 import Korean from './components/korean';
 import Flcc from './components/flcc';
+
 function App() {
   return (
-    <div className="App">
-      <Header class='sticky'>
-      <Router>
-      <Routes>
-        <Route path="/" exact component={<Header/>}/>
-        <Route path="/Korean-quiz" component={<Korean/>} />  
-        <Route path="/freeleetcodecamp" component={<Flcc/>}/> 
-        <Route path="/twitch-bot"component={<Twitchbot/>}/> 
-      </Routes>
+    <Router>
+      <div className="App">
+        <Header class='sticky' />
+        <Routes>
+          <Route exact path="/" element={
+          <><Hero /><Page /></>
+        } />
+          <Route exact path="/Korean-quiz" element={<Korean />} />
+          <Route exact path="/freeleetcodecamp" element={<Flcc />} />
+          <Route exact path="/twitch-bot" element={<Twitchbot />} />
+        </Routes>
+        
+      </div>
     </Router>
-    </Header>
-      <Hero/>
-      <Page/>
-    </div>
   );
 }
 

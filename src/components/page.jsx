@@ -15,7 +15,7 @@ export default function Page() {
       </div>
       <div className='flex flex-col justify-center items-center py-5'>
       <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Skills:</p>
-      <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">HTML | CSS | JavaScript | NodeJS | React | Typescript | TailwindCSS | Python | AWS EC2 | AWS Elastic Beanstalk | AWS RDS | AWS Polly | AWS Amplify | AWS S3 | AWS VPC | Docker | mySQL | Git | Github | Github Actions</p>
+      <p class="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">HTML | CSS | JavaScript | NodeJS | React | Typescript | TailwindCSS | Python | AWS EC2 | AWS Elastic Beanstalk | AWS RDS | AWS Polly | AWS Amplify | AWS S3 | AWS VPC | AWS ECR | Docker | mySQL | Git | Github | Github Actions</p>
       </div>
       </div>
     </div>
@@ -39,7 +39,7 @@ export default function Page() {
           <h2 class="text-lg text-white font-medium title-font mb-4">With AWS Polly Integration</h2>
           <p class="leading-relaxed text-base">Developed a React TypeScript Korean learning quiz featuring AWS Polly for authentic Korean pronunciation. Deployed with AWS Amplify, showcasing proficiency in modern front-end technologies and cloud deployment.</p>
           <div className='flex flex-col py-5'>
-          <button className='text-white hover:text-green-400'>Learn more...</button>
+          <button className='text-white hover:text-green-400'><Link to='/korean-quiz'>Learn more...</Link></button>
           <button className='text-white hover:text-green-400' ><a href='https://github.com/KianIsNotAvailable/learn-korean' target='_blank'>View on Github</a></button>
           </div>
         </div>
@@ -48,10 +48,10 @@ export default function Page() {
         <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
           <img class="h-40 rounded w-full object-contain object-center mb-6" src={Chatbot} alt="content"/>
           <h3 class="tracking-widest text-green-400 text-xs font-medium title-font">Python Twitch Chat Bot</h3>
-          <h2 class="text-lg text-white font-medium title-font mb-4">With CI/CD Deployment</h2>
-          <p class="leading-relaxed text-base">Created a Python Twitch chat bot allowing users to gamble virtual points, leveraging Twitch IRC. Integrated AWS RDS MySQL for data management. Implemented CI/CD pipeline with GitHub Actions and Docker, deploying to AWS Elastic Beanstalk within an AWS VPC for optimal performance.</p>
+          <h2 class="text-lg text-white font-medium title-font mb-4">With EC2, Docker, ECR and RDS</h2>
+          <p class="leading-relaxed text-base">I designed a Python Twitch chat bot enabling users to gamble virtual points in real-time using Twitch IRC. The bot efficiently manages data with AWS RDS MySQL, and for seamless deployment, it's Dockerized and hosted on AWS EC2 instances after being pushed to Elastic Container Registry (ECR).</p>
           <div className='flex flex-col py-5'>
-          <button className='text-white hover:text-green-400'>Learn more...</button>
+          <button className='text-white hover:text-green-400'><Link to='/twitch-bot'>Learn more...</Link></button>
           <button className='text-white hover:text-green-400' ><a href='https://github.com/KianIsNotAvailable/twitch-bot' target='_blank'>View on Github</a></button>
           </div>
         </div>
