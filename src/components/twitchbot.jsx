@@ -1,5 +1,6 @@
 import React from 'react'
 import TwitchBot from '../assets/chatbot.png'
+import Diagram from '../assets/bot-diagram.jpg'
 export default function twitchbot() {
   return (
     <div>
@@ -17,10 +18,10 @@ export default function twitchbot() {
 </section>
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={TwitchBot}/>
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={Diagram}/>
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">AWS Architecture</h1>
-      <p class="leading-relaxed mb-8">A React TypeScript application designed to enhance Korean language learning through engaging quizzes. The project seamlessly integrates AWS Polly to incorporate authentic Korean pronunciation, providing users with a comprehensive language-learning experience.Utilizing the power of React and TypeScript, the quiz application offers a responsive and interactive interface, ensuring an enjoyable and educational journey for users. AWS Amplify serves as the deployment platform, guaranteeing a scalable and reliable hosting solution.</p>
+      <p class="leading-relaxed mb-8">I developed a Python-based Twitch chat bot using the Twitch API and Twitch IRC, deploying it with a robust setup on AWS. The infrastructure consists of a Virtual Private Cloud (VPC) equipped with an Internet Gateway, facilitating access on port 3306 for MySQL and port 6667 for Twitch IRC. In a public subnet, an AWS RDS MySQL database is set up to efficiently store user data such as points and usernames.To streamline deployment, I containerized my Python code into a Docker image and deployed it to AWS Elastic Container Registry (ECR). The deployment process involved configuring an EC2 instance, placed in a public subnet for accessibility. Accessed via PuTTY SSH, the instance was equipped with Docker, configured with AWS credentials, and connected to Elastic Container Registry. The final step included pulling the Python Twitch bot Docker image from Elastic Container Registry and running it on the EC2 instance, ensuring seamless and scalable operation, all within a public subnet for broader accessibility.</p>
       <div class="flex justify-center">
         </div>
     </div>
