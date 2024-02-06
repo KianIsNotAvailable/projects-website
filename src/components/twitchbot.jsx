@@ -1,6 +1,7 @@
 import React from 'react'
 import TwitchBot from '../assets/chatbot.png'
 import Diagram from '../assets/bot-diagram.jpg'
+import Demo from '../assets/bot-demo.png'
 export default function twitchbot() {
   return (
     <div>
@@ -29,10 +30,16 @@ export default function twitchbot() {
 </section>
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={TwitchBot}/>
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src={Demo}/>
     <div class="text-center lg:w-2/3 w-full">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Documentation</h1>
-      <p class="leading-relaxed mb-8">How I made it:</p>
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">How To Use The Python Twitch Bot.</h1>
+      <p class="leading-relaxed mb-8 text-left">Visit https://twitch.tv/popout/kianchatbot/chat?popout= to use the bot in chat. On your first message, you will automatically be added to the database starting with 1000 points.</p>
+      <p class="leading-relaxed mb-8 text-left">The available commands include:</p>
+      <p class="leading-relaxed mb-8 text-left">!balance, to see how many points you have.</p>
+      <p class="leading-relaxed mb-8 text-left">!spin, to gamble a specified number of points. Example: !spin 100.</p>
+      <p class="leading-relaxed mb-8 text-left">!odds, to see the multipliers.</p>
+      <p class="leading-relaxed mb-8 text-left">!reset, to reset your points back to 1000.</p>
+      <p class="leading-relaxed mb-8 text-left">!gift, to receive a 1000 points gift. Only when your balance is 0</p>
       <div class="flex justify-center">
         </div>
     </div>

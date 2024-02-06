@@ -11,7 +11,7 @@ export default function header() {
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
       <a class="mr-5 hover:text-white"><RouterLink to='/'>Home</RouterLink></a>
       <a class="mr-5 hover:text-white"><Link to='experience' spy={true} smooth={true} offset={-70} duration={500}><RouterLink to='/'>Projects</RouterLink></Link></a>
-      <a class="mr-5 hover:text-white">Résumé</a>
+      <a class="mr-5 hover:text-white">PDF CV</a>
     </nav>
   </div>
 </header>
