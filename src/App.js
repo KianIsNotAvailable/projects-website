@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Twitchbot from './components/twitchbot';
 import Korean from './components/korean';
 import Flcc from './components/flcc';
+import ScrollToTop from './components/scrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header class='sticky' />
         <Routes>
