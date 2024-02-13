@@ -1,10 +1,10 @@
 import React from 'react'
-
+import pdfPath from '../assets/tech cv.pdf'
 import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
 
 export default function header() {
-  const pdfPath = process.env.PUBLIC_URL + '/tech cv.pdf';
+  
   return (
     <div>
         <header class="text-gray-400 bg-gray-900 body-font">
